@@ -1,0 +1,5 @@
+#include "217204684_test.h"
+
+using namespace Robotersimulation::Naosimulation;
+
+ODESimulation * sim = new ODESimulation (0, NULL);
