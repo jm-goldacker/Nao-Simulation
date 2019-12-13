@@ -8,8 +8,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src-gen/Robotersimulation/Naosimulation/subdir.mk
--include src-gen/subdir.mk
+-include src/Robotersimulation/Naosimulation/subdir.mk
+-include src/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -39,19 +39,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: org.eclipse.papyrus.cppgen.Robotersimulation
+all: naosim
 
 # Tool invocations
-org.eclipse.papyrus.cppgen.Robotersimulation: $(OBJS) $(USER_OBJS)
+naosim: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++  -o "org.eclipse.papyrus.cppgen.Robotersimulation" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "naosim" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) org.eclipse.papyrus.cppgen.Robotersimulation
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) naosim
 	-@echo ' '
 
 .PHONY: all clean dependents
