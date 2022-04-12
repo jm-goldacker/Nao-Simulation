@@ -1,14 +1,14 @@
 # Nao Simulation
 
-This software simulates the robot Nao, which is built by Aldebaran Robotics. It uses the [Open Dynamics Engine (ODE) 0.16](https://www.ode.org/) as physics engine.
+This software simulates the robot Nao, which is built by Aldebaran Robotics. It uses the [Open Dynamics Engine (ODE) 0.16](https://www.ode.org/) as a physics engine.
 
 ## Motivation
 
-The project was my assignment for a university lesson, which has the objective to teach software design patterns and the process of software development. 
+This project was my assignment for a university course, which had the objective to teach software design patterns and the process of software development. 
 
-**This software is not perfect. I would design many things different now. It was my first bigger C++ project and developed in a short amount of time.**
+**This software is not perfect. I would design many things differently now. It was my first bigger C++ project and I developed it in a short amount of time.**
 
-**This repository is for everyone who wants to program something like a robot simulation with ODE and needs some kind of starting point. It's currently not being maintained, but I might refactor/rewrite the code in the future.**
+This repository is for everyone who wants to program something like a robot simulation with ODE and needs some kind of starting point. It's currently not being maintained, but I might refactor/rewrite the code in the future.
 
 You can find the documentation of this software with all design decisions inside `docs`.
 
